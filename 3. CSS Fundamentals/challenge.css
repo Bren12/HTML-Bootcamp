@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   font-size: 15px;
@@ -5,10 +10,17 @@ body {
   line-height: 1.4;
 }
 
+p {
+  margin-bottom: 5px;
+}
+
 /* PRODUCT */
 
 .product {
   border: 5px solid #000;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
 }
 
 .product-title,
@@ -20,13 +32,27 @@ body {
   text-align: center;
   font-size: 20px;
   background-color: #eee;
+  padding: 15px;
+}
+
+.product::before {
+  content: "SALE";
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  background-color: red;
+  padding: 5px 10px;
+  position: absolute;
+  left: -25px;
+  top: -15px;
 }
 
 /* PRODUCT INFO */
 
 .price {
   font-size: 20px;
-  height: 30px;
+  margin-bottom: 0;
 }
 
 .shipping {
@@ -34,11 +60,14 @@ body {
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .more-info:link,
 .more-info:visited {
   color: #000;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .more-info:hover,
@@ -46,24 +75,75 @@ body {
   text-decoration: none;
 }
 
+.color-options {
+  margin-bottom: 20px;
+}
+
+.option {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.option:first-child {
+  background-color: black;
+}
+
+.option:nth-child(2) {
+  background-color: blue;
+}
+
+.option:nth-child(3) {
+  background-color: red;
+}
+
+.option:nth-child(4) {
+  background-color: yellow;
+}
+
+.option:nth-child(5) {
+  background-color: green;
+}
+
+.option:last-child {
+  background-color: brown;
+  margin-right: 0;
+}
+
 /* PRODUCT DETAILS */
 
 .detail-title {
   font-size: 15px;
+  margin-bottom: 20px;
 }
 
 .detail-list {
   list-style: square;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.detail-list li {
+  margin-bottom: 5px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* BUTTTON */
 
 .cart {
   color: #fff;
+  font-size: 20px;
   text-transform: uppercase;
   background-color: #000;
   border: none;
+  border-top: 5px solid #000;
   cursor: pointer;
+  width: 100%;
+  padding: 15px;
 }
 
 .cart:hover {
