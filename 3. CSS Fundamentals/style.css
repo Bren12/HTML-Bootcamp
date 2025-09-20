@@ -1,10 +1,11 @@
+/* ******************** UNIVERSAL SELECTOR ******************** */
 * {
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
 }
 
-/* PAGE SECTIONS */
+/* ******************** PAGE SECTIONS ******************** */
 
 body {
   font-family: sans-serif;
@@ -30,10 +31,10 @@ body {
 
 nav {
   font-size: 18px;
-  text-align: center;
+  /* text-align: center; */
 }
 
-/* ARTICLE */
+/* ******************** ARTICLE ******************** */
 
 article {
   margin-bottom: 60px;
@@ -44,6 +45,11 @@ article {
   /* position: relative; */
 }
 
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
@@ -52,7 +58,7 @@ aside {
   width: 500px;
 }
 
-/* SMALLER ELEMENTS */
+/* ******************** SMALLER ELEMENTS ******************** */
 
 h1,
 h2,
@@ -80,7 +86,7 @@ h2 {
 h2::after {
   content: "TOP";
   color: black;
-  background-color: yellow;
+  background-color: #ffe70e;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
@@ -99,6 +105,7 @@ h3 {
 h4 {
   font-size: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 p {
@@ -108,9 +115,11 @@ p {
   /* display: inline; */
 }
 
+/* 
 h3 + p::first-line {
   color: red;
 }
+*/
 
 ul,
 ol {
@@ -123,6 +132,8 @@ li {
   margin-bottom: 10px;
   /* display: inline; */
 }
+
+/* ******************** IDS ******************** */
 
 #author {
   font-style: italic;
@@ -142,12 +153,7 @@ li {
   list-style: none;
 }
 
-/* LVHA */
-
-.post-image {
-  width: 100%;
-  height: auto;
-}
+/* ******************** MULTIPLE PSEUDO CLASSES ******************** */
 
 nav a:link {
   /* background-color: orangered;
@@ -159,23 +165,24 @@ nav a:link {
   display: inline-block;
 }
 
-/* MULTIPLE PSEUDO CLASSES */
 nav a:link:last-child {
   margin-right: 0;
 }
 
-/* .first-li {
+/*
+.first-li {
   font-weight: bold;
-} */
+}
+*/
 
-/* li:first-child {
+li:first-child {
   font-weight: bold;
 }
 
 li:last-child {
   font-style: italic;
   margin-bottom: 0;
-} */
+}
 
 /* li:nth-child(even) {
   color: red;z
@@ -186,7 +193,8 @@ li:last-child {
   color: red;
 } */
 
-/* Styling links */
+/* ******************** LVHA ******************** */
+
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -225,6 +233,8 @@ a:active {
 footer p {
   color: green !important;
 } */
+
+/* ******************** BUTTON ******************** */
 
 button {
   font-size: 22px;
