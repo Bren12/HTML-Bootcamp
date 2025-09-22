@@ -48,22 +48,13 @@ body {
 .product-img {
   width: 250px;
   height: 250px;
-  /* float: left; */
 }
 
 .product-info {
-  /* float: left; */
-  /* width: 243.5px; */
-  /* margin-left: 40px; */
-  /* margin-top: 20px; */
   flex: 1;
 }
 
 .product-detail {
-  /* float: left; */
-  /* width: 243.5px; */
-  /* margin-left: 40px; */
-  /* margin-top: 20px; */
   flex: 1;
 }
 
@@ -73,13 +64,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   margin-bottom: 20px;
 }
 
 .price {
   font-size: 24px;
-  /* float: left; */
 }
 
 .shipping {
@@ -87,14 +77,10 @@ body {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  /* margin-top: 8px; */
-  /* margin-bottom: 20px; */
-  /* float: right; */
 }
 
 .product-descrip {
   margin-bottom: 10px;
-  /* clear: both; */
 }
 
 .more-info:link,
@@ -186,16 +172,69 @@ li:last-child {
   background-color: #fff;
 }
 
-.container {
-  /* background-color: red; */
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  justify-content: space-between;
-}
+/* ******************** FLOAT ******************** */
+
+/* .price {
+  float: left;
+} */
+
+/* .shipping {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  float: right;
+} */
+
+/* .product-descrip {
+  clear: both;
+} */
+
+/* .product-img {
+  float: left;
+} */
+
+/* .product-info {
+  float: left;
+  width: 243.5px;
+  margin-left: 40px;
+  margin-top: 20px;
+} */
+
+/* .product-detail {
+  float: left;
+  width: 243.5px;
+  margin-left: 40px;
+  margin-top: 20px;
+} */
 
 /* .clearfix::after {
   content: "";
   display: block;
   clear: both;
 } */
+
+/* ******************** FLEXBOX ******************** */
+
+/* .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+} */
+
+/* ******************** CSS GRID ******************** */
+
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.product-title {
+  grid-column: 1/-1;
+}
+
+.cart {
+  grid-column: 1/-1;
+}

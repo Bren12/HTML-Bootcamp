@@ -22,7 +22,7 @@ body {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 
   /* FLEXBOX */
   display: flex;
@@ -40,7 +40,9 @@ nav {
 article {
   /* margin-bottom: 60px; */
   /* width: 825px; */
+  /* FLOAT */
   /* float: left; */
+  /* FLEXBOX */
   flex: 1;
 }
 
@@ -49,6 +51,7 @@ article {
 }
 
 .author-box {
+  /* FLEXBOX */
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -66,7 +69,8 @@ aside {
   padding: 50px 40px;
   /* width: 800px; */
   /* float: right; */
-  flex: 0 0 300px;
+  /* FLEXBOX */
+  /* flex: 0 0 300px; */
 }
 
 /* footer {
@@ -243,6 +247,8 @@ button {
   display: block;
 } */
 
+/* FLEXBOX */
+
 .related-post {
   display: flex;
   align-items: center;
@@ -262,8 +268,25 @@ li:last-child {
 }
 
 .row {
-  display: flex;
+  /* display: flex;
   gap: 75px;
   margin-bottom: 60px;
-  align-items: flex-start;
+  align-items: flex-start; */
+}
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
 }
